@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://lwulhofri4oh"]
+
+[ext_resource type="PackedScene" uid="uid://bfmewcp8eixmi" path="res://modelos/half_life_alyx_-_hotel_lobby_basement.glb" id="1_8noiy"]
+
+[node name="Node3D" type="Node3D" unique_id=441535008]
+
+[node name="Sketchfab_Scene" parent="." unique_id=1590532848 instance=ExtResource("1_8noiy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13652909, 1.1920929e-07, -0.08519316)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=68893582]
+transform = Transform3D(1, 0, 0, 0, -0.06949529, 0.9975823, 0, -0.9975823, -0.06949529, 3.8475103, 2.1777644, 1.3536015)

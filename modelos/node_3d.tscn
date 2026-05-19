@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dt810g7orj3p5"]
+
+[ext_resource type="PackedScene" uid="uid://cjchhokydf41t" path="res://modelos/among_us_lobby_new.glb" id="1_mingk"]
+
+[node name="Node3D" type="Node3D" unique_id=1841208300]
+
+[node name="Sketchfab_Scene" parent="." unique_id=1159265164 instance=ExtResource("1_mingk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.85137236, 0, 0.12279248)
