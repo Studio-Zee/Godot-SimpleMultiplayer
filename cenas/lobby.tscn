@@ -16,6 +16,8 @@ backface_collision = true
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_6okrd"]
 data = PackedVector3Array(-1, 0, 1.5540999, 1, 0, -1.5540999, 1, 0, 1.5540999, -1, 0, 1.5540999, -1, 0, -1.5540999, 1, 0, -1.5540999)
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a1lms"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_lxmr4"]
 font_size = 38
 shadow_size = 4
@@ -56,7 +58,6 @@ shape = SubResource("ConcavePolygonShape3D_6okrd")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.311451, 0)
 
 [node name="TerminalUI" type="CanvasLayer" parent="." index="2" unique_id=866368315]
-visible = false
 
 [node name="Control" type="Control" parent="TerminalUI" index="0" unique_id=1636065839]
 layout_mode = 3
@@ -79,6 +80,7 @@ offset_right = 225.0
 offset_bottom = 175.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_a1lms")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="TerminalUI/Control/Panel" index="0" unique_id=206983978]
 layout_mode = 1
@@ -113,6 +115,11 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Entrar"
 
+[node name="sair" type="Button" parent="TerminalUI/Control/Panel/VBoxContainer" index="4" unique_id=1504230825]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Sair"
+
 [node name="monitor" parent="." index="3" unique_id=2062939193 instance=ExtResource("3_kj0ed")]
 transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0, 0.42236632, -5.417623)
 
@@ -121,6 +128,9 @@ transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0, 0.42236632, -5.41
 [node name="CollisionShape3D" type="CollisionShape3D" parent="monitor/ZonaTerminal" index="0" unique_id=1743855721]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5516052, 12.001465, 2.416565)
 shape = SubResource("BoxShape3D_kj0ed")
+
+[node name="PosicaoTela" type="Marker3D" parent="monitor" index="2" unique_id=1865441224]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.3876915, 16.604416)
 
 [node name="mesa" type="MeshInstance3D" parent="." index="4" unique_id=1849365575]
 transform = Transform3D(1, 0, 0, 0, 0.43550137, 0, 0, 0, 1, 0, 0.20466846, -5.6063485)
@@ -131,5 +141,6 @@ mesh = SubResource("BoxMesh_a1lms")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="mesa/StaticBody3D" index="0" unique_id=2012685722]
 shape = SubResource("ConcavePolygonShape3D_kj0ed")
 
+[connection signal="pressed" from="TerminalUI/Control/Panel/VBoxContainer/sair" to="." method="_on_sair_pressed"]
 [connection signal="body_entered" from="monitor/ZonaTerminal" to="." method="_on_zona_terminal_body_entered"]
 [connection signal="body_exited" from="monitor/ZonaTerminal" to="." method="_on_zona_terminal_body_exited"]
