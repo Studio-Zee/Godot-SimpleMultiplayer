@@ -35,7 +35,7 @@ func abrir_interface():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
 	# ADICIONE ESTA LINHA: Força o cursor a focar na caixa de texto automaticamente!
-	code_input.grab_focus()
+	#code_input.grab_focus()
 
 func liberar_jogador():
 	player.set_physics_process(true)
