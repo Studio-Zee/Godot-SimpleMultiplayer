@@ -33,6 +33,9 @@ func _on_zona_terminal_body_entered(body: Node3D) -> void:
 func abrir_interface():
 	terminal_ui.show()
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	
+	# ADICIONE ESTA LINHA: Força o cursor a focar na caixa de texto automaticamente!
+	code_input.grab_focus()
 
 func liberar_jogador():
 	player.set_physics_process(true)
