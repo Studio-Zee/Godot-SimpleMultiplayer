@@ -1,9 +1,9 @@
 extends Node3D
 
-@onready var terminal_ui = $TerminalUI
-@onready var code_input = $TerminalUI/Control/Panel/VBoxContainer/LineEdit
-@onready var posicao_tela = $monitor/PosicaoTela # Arraste o Marker3D pra cá!
-@onready var player = $Player3D # Arraste o seu Player pra cá!
+@onready var terminal_ui = $monitor/TelaViewport/TerminalUI
+@onready var code_input = $monitor/TelaViewport/TerminalUI/Control/Panel/VBoxContainer/LineEdit
+@onready var posicao_tela = $monitor/PosicaoTela 
+@onready var player = $Player3D
 
 var camera_player : Camera3D
 var transform_original_camera : Transform3D
