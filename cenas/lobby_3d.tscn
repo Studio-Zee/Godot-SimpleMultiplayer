@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bto4dbj0bx7sj"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_f37nd"]
+
+[sub_resource type="Sky" id="Sky_ay5f6"]
+sky_material = SubResource("ProceduralSkyMaterial_f37nd")
+
+[sub_resource type="Environment" id="Environment_ddukq"]
+background_mode = 2
+sky = SubResource("Sky_ay5f6")
+
+[node name="Lobby3D" type="Node3D" unique_id=1332781835]
+
+[node name="Chao" type="CSGBox3D" parent="." unique_id=1661591689]
+transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 20, 0, 0, 0)
+use_collision = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1779877613]
+transform = Transform3D(1, 0, 0, 0, 0.061135605, 0.9981295, 0, -0.9981295, 0.061135605, 0, 23.290005, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1746226072]
+environment = SubResource("Environment_ddukq")
