@@ -94,7 +94,7 @@ node server.js
 ### Find your local Wi-Fi IP address
 
 ```bash
-ip addr show wlan0
+ifconfig
 ```
 
 Use the IP address assigned by your Wi-Fi network, not `localhost`, when connecting from another device.
