@@ -14,6 +14,15 @@ config/name="Godot-SimpleMultiplayer3D"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+WebSocketClient="*uid://md7itox5x2eh"
+MultiplayerManager="*uid://bcj1fgxpuokf7"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/simplemultiplayer3d/plugin.cfg")
+
 [input_devices]
 
 pointing/emulate_touch_from_mouse=true

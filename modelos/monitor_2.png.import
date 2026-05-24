@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://buvidhymfjpm1"
-path.etc2="res://.godot/imported/monitor_2.png-85abe5cf72920e39270683a282136f82.etc2.ctex"
+path.s3tc="res://.godot/imported/monitor_2.png-85abe5cf72920e39270683a282136f82.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://modelos/monitor_2.png"
-dest_files=["res://.godot/imported/monitor_2.png-85abe5cf72920e39270683a282136f82.etc2.ctex"]
+dest_files=["res://.godot/imported/monitor_2.png-85abe5cf72920e39270683a282136f82.s3tc.ctex"]
 
 [params]
 

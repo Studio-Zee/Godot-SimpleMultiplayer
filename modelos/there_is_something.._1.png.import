@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://r3enyv236eqk"
-path.etc2="res://.godot/imported/there_is_something.._1.png-2fab6701e8b716c8b14f48d2772cb770.etc2.ctex"
+path.s3tc="res://.godot/imported/there_is_something.._1.png-2fab6701e8b716c8b14f48d2772cb770.s3tc.ctex"
 metadata={
-"imported_formats": ["etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://modelos/there_is_something.._1.png"
-dest_files=["res://.godot/imported/there_is_something.._1.png-2fab6701e8b716c8b14f48d2772cb770.etc2.ctex"]
+dest_files=["res://.godot/imported/there_is_something.._1.png-2fab6701e8b716c8b14f48d2772cb770.s3tc.ctex"]
 
 [params]
 

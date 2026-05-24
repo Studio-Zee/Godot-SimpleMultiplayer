@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://cqjgcw2w5l1ny" path="res://modelos/there_is_something....glb" id="1_lxmr4"]
 [ext_resource type="Script" uid="uid://qc0ghf6yds1f" path="res://scripts/lobby/lobby.gd" id="2_a1lms"]
-[ext_resource type="PackedScene" uid="uid://by5og5nqib44m" path="res://player/player.tscn" id="2_kj0ed"]
 [ext_resource type="PackedScene" uid="uid://dmfwskkhffag0" path="res://cenas/monitor.tscn" id="3_kj0ed"]
+[ext_resource type="PackedScene" uid="uid://by5og5nqib44m" path="res://player/player_local.tscn" id="5_qp1wg"]
 [ext_resource type="Script" uid="uid://dr4sinp1hxjhe" path="res://scripts/tela/tela_touch.gd" id="5_sw6cc"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_2se70"]
@@ -55,28 +55,25 @@ size = Vector3(1.5801353, 1.0440068, 0.022583008)
 [node name="Lobby" unique_id=1068178567 instance=ExtResource("1_lxmr4")]
 script = ExtResource("2_a1lms")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_0/Object_4" parent_id_path=PackedInt32Array(402757589) index="0" unique_id=22785968]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_0/Object_4" parent_id_path=PackedInt32Array(2007038562) index="0" unique_id=22785968]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_0/Object_4/StaticBody3D" index="0" unique_id=1856187226]
 shape = SubResource("ConcavePolygonShape3D_2se70")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_0/Object_5" parent_id_path=PackedInt32Array(1850937745) index="0" unique_id=2124755350]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_0/Object_5" parent_id_path=PackedInt32Array(653002727) index="0" unique_id=2124755350]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_0/Object_5/StaticBody3D" index="0" unique_id=2120471709]
 shape = SubResource("ConcavePolygonShape3D_cp6lq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_1/Object_7" parent_id_path=PackedInt32Array(707995716) index="0" unique_id=1273510955]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_1/Object_7" parent_id_path=PackedInt32Array(588557563) index="0" unique_id=1273510955]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_1/Object_7/StaticBody3D" index="0" unique_id=1834912141]
 shape = SubResource("ConcavePolygonShape3D_6okrd")
 
-[node name="Player3D" parent="." index="1" unique_id=1826431025 instance=ExtResource("2_kj0ed")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8748727, -1.4628651)
-
-[node name="monitor" parent="." index="2" unique_id=2062939193 instance=ExtResource("3_kj0ed")]
+[node name="monitor" parent="." index="1" unique_id=2062939193 instance=ExtResource("3_kj0ed")]
 transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0, 0.42236632, -5.417623)
 
-[node name="ibm_3178_2" parent="monitor/Sketchfab_model/Root/ibm_3178" parent_id_path=PackedInt32Array(2062939193, 314227496) index="2" unique_id=1785529178]
+[node name="ibm_3178_2" parent="monitor/Sketchfab_model/Root/ibm_3178" parent_id_path=PackedInt32Array(2062939193, 2005432671) index="2" unique_id=490444015]
 surface_material_override/0 = SubResource("StandardMaterial3D_qp1wg")
 
 [node name="StaticBody3D" parent="monitor/Sketchfab_model/Root/ibm_3178/ibm_3178_2" index="0" unique_id=1263702576 node_paths=PackedStringArray("viewport")]
@@ -166,7 +163,7 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Sair"
 
-[node name="mesa" type="MeshInstance3D" parent="." index="3" unique_id=1849365575]
+[node name="mesa" type="MeshInstance3D" parent="." index="2" unique_id=1849365575]
 transform = Transform3D(1, 0, 0, 0, 0.43550137, 0, 0, 0, 1, 0, 0.20466846, -5.6063485)
 mesh = SubResource("BoxMesh_a1lms")
 
@@ -175,7 +172,7 @@ mesh = SubResource("BoxMesh_a1lms")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="mesa/StaticBody3D" index="0" unique_id=2012685722]
 shape = SubResource("ConcavePolygonShape3D_kj0ed")
 
-[node name="TelaTouch" type="StaticBody3D" parent="." index="4" unique_id=68504637 node_paths=PackedStringArray("viewport")]
+[node name="TelaTouch" type="StaticBody3D" parent="." index="3" unique_id=68504637 node_paths=PackedStringArray("viewport")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0569731, 0.9423289, -5.101904)
 script = ExtResource("5_sw6cc")
 viewport = NodePath("../monitor/TelaViewport")
@@ -184,8 +181,13 @@ viewport = NodePath("../monitor/TelaViewport")
 transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, -8.7447464e-05, 0.04181415, -0.11127615)
 shape = SubResource("BoxShape3D_sw6cc")
 
+[node name="Player3D" parent="." index="4" unique_id=1826431025 instance=ExtResource("5_qp1wg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3049514, 0)
+
 [connection signal="body_entered" from="monitor/ZonaTerminal" to="." method="_on_zona_terminal_body_entered"]
 [connection signal="body_exited" from="monitor/ZonaTerminal" to="." method="_on_zona_terminal_body_exited"]
+[connection signal="pressed" from="monitor/TelaViewport/TerminalUI/Control/Panel/VBoxContainer/criar" to="." method="_on_criar_pressed"]
+[connection signal="pressed" from="monitor/TelaViewport/TerminalUI/Control/Panel/VBoxContainer/entrar" to="." method="_on_entrar_pressed"]
 [connection signal="pressed" from="monitor/TelaViewport/TerminalUI/Control/Panel/VBoxContainer/sair" to="." method="_on_sair_pressed"]
 [connection signal="input_event" from="TelaTouch" to="TelaTouch" method="_on_input_event"]
 
