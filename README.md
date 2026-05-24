@@ -34,6 +34,21 @@ SimpleMultiplayer3D is a lightweight Godot plugin for real-time 3D multiplayer o
 5. Configure the server URL in Project Settings if needed:
    - `simple_multiplayer/server_url`
 
+## Server Repository
+
+This plugin is designed to work with a separate Node.js server repository that contains the full step-by-step guide for installing, configuring, and running the backend.
+
+Server repository: [Open the server repository](https://github.com/your-organization/your-server-repository)
+
+Use that repository when you need:
+
+- Server setup instructions
+- Backend installation steps
+- Local and online server execution
+- Environment-specific configuration details
+
+The recommended workflow is to keep the Godot plugin and the server backend in separate repositories so the client project stays lightweight and easy to distribute.
+
 ## Quick Start
 
 1. Enable the plugin.
@@ -43,6 +58,21 @@ SimpleMultiplayer3D is a lightweight Godot plugin for real-time 3D multiplayer o
 5. Connect the client.
 
 For the first test, the recommended flow is to run the Node.js server locally, open the demo lobby, and verify that the client connects and enters the waiting room correctly.
+
+## Server Repository
+
+This plugin was developed to work with a separate repository from the Node.js server, where you can find the complete step-by-step instructions for installing, configuring, and running the backend.
+
+Server repository: [Open server repository](https://github.com/your-organization/your-server-repository)
+
+Use this repository when you need:
+
+- Server configuration instructions
+- Backend installation steps
+- Local and online server execution
+- Environment-specific configuration details
+
+It is recommended to keep the Godot plugin and the backend in separate repositories so that the client project remains lightweight and easy to distribute.
 
 ## Local Testing on Android (Termux)
 
@@ -208,6 +238,21 @@ SimpleMultiplayer3D é um plugin leve para multiplayer 3D em tempo real via WebS
 5. Conecte o cliente.
 
 Para o primeiro teste, o fluxo recomendado é rodar o servidor Node.js localmente, abrir o lobby de demonstração e verificar se o cliente conecta e entra corretamente na sala de espera.
+
+## Repositório do Servidor
+
+Este plugin foi desenvolvido para funcionar com um repositório separado do servidor Node.js, onde está o passo a passo completo de instalação, configuração e execução do backend.
+
+Repositório do servidor: [Abrir o repositório do servidor](https://github.com/your-organization/your-server-repository)
+
+Use esse repositório quando precisar de:
+
+- Instruções de configuração do servidor
+- Etapas de instalação do backend
+- Execução local e online do servidor
+- Detalhes de configuração específicos do ambiente
+
+A recomendação é manter o plugin Godot e o backend em repositórios separados, para que o projeto do cliente continue leve e fácil de distribuir.
 
 ## Local Testing on Android (Termux)
 
