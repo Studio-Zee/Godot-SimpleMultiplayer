@@ -39,6 +39,8 @@ func _conectar_servidor():
 		ws_client.connect("room_joined", Callable(self, "_on_room_joined"))
 		ws_client.connect("start_game", Callable(self, "_load_world_scene"))
 		
+		ws_client.connect("server_error", Callable(self, "_on_erro_servidor"))
+		
 		label_status.text = "Conectando ao servidor..."
 		
 		# Lê a URL configurada no ProjectSettings (ou usa a padrão localhost)
@@ -114,3 +116,8 @@ func _load_world_scene():
 		push_error("ERRO ao carregar a cena do mundo!")
 	else:
 		print("Mundo carregado com sucesso!")
+		
+# NOVA FUNÇÃO: Imprime o erro no monitor!
+func _on_erro_servidor(data: Dictionary):
+	var mensagem = data.get("msg", "Erro desconhecido")
+	label_status.text = "ERRO: " + mensagem
