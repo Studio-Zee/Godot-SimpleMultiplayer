@@ -15,6 +15,8 @@ signal spawn_new_player(player_data)
 signal spawn_network_players(players_data)
 signal update_position(position_data)
 signal player_disconnected(player_data)
+var is_host: bool = false
+var room_code: String = ""
 
 var uuid: String = ""
 var _peer := WebSocketPeer.new()
@@ -60,8 +62,12 @@ func handle_incoming_data(data: Dictionary):
 			uuid = content.get("uuid", "")
 			emit_signal("connection_succeeded")
 		"room_created":
+			is_host = content.get("is_host", false)
+			room_code = content.get("code", "") # <--- SALVA O CÓDIGO AQUI
 			emit_signal("room_created", content)
 		"room_joined":
+			is_host = content.get("is_host", false)
+			room_code = content.get("code", "") # <--- E AQUI TAMBÉM
 			emit_signal("room_joined", content)
 		"start_game":
 			emit_signal("start_game") 

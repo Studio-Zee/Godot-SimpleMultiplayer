@@ -14,7 +14,7 @@ extends Node3D
 var camera_player : Camera3D
 var transform_original_camera : Transform3D
 
-const DEFAULT_SERVER_URL = "ws://192.168.3.103"
+const DEFAULT_SERVER_URL = "ws://localhost:9090"
 
 func _ready():
 	terminal_ui.hide()
@@ -98,16 +98,12 @@ func _on_connection_failed() -> void:
 	label_status.text = "Falha na conexão."
 
 func _on_room_created(data: Dictionary):
-	label_status.text = "Sala criada! Código: %s. Aguardando..." % data.get("code")
-	btn_criar.disabled = true
-	btn_entrar.disabled = true
-	code_input.editable = false
+	# Vai direto para a Ilha de Espera!
+	get_tree().change_scene_to_file("res://cenas/sala_espera.tscn")
 
 func _on_room_joined(data: Dictionary):
-	label_status.text = "Entrou na sala: %s. Aguardando..." % data.get("code")
-	btn_criar.disabled = true
-	btn_entrar.disabled = true
-	code_input.editable = false
+	# Vai direto para a Ilha de Espera!
+	get_tree().change_scene_to_file("res://cenas/sala_espera.tscn")
 
 func _load_world_scene():
 	label_status.text = "Iniciando Partida!"
