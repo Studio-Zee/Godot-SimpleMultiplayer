@@ -18,6 +18,7 @@ backface_collision = true
 data = PackedVector3Array(-1, 0, 1.5540999, 1, 0, -1.5540999, 1, 0, 1.5540999, -1, 0, 1.5540999, -1, 0, -1.5540999, 1, 0, -1.5540999)
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_ltsnn"]
+viewport_path = NodePath("TelaViewport")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8svgb"]
 resource_local_to_scene = true

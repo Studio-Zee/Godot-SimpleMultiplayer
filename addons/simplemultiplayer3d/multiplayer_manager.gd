@@ -1,7 +1,7 @@
 extends Node
 
-var player_scene = preload("res://player/player_local.tscn") 
-var network_player_scene = preload("res://player/player_rede.tscn")
+var player_scene = preload("res://exemplo/player/player_local.tscn") 
+var network_player_scene = preload("res://exemplo/player/player_rede.tscn")
 
 var player_nodes = {}
 var connected_players = {} 
