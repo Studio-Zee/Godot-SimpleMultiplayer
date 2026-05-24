@@ -2,6 +2,8 @@
 
 SimpleMultiplayer3D is a lightweight Godot plugin for real-time 3D multiplayer over WebSocket, designed with a mobile-first workflow in mind. It is suitable for fast prototyping, local mobile testing, and real multiplayer projects with a separate Node.js backend.
 
+Built specifically for mobile-first multiplayer development, allowing full local multiplayer testing directly on Android using Termux without requiring a desktop server setup.
+
 ## Features
 
 - WebSocket multiplayer
@@ -181,6 +183,8 @@ Placeholder.
 # Godot Simple Multiplayer 3D
 
 SimpleMultiplayer3D é um plugin leve para multiplayer 3D em tempo real via WebSocket, desenvolvido com fluxo mobile-first em mente. Ele é indicado para prototipagem rápida, testes locais no celular e projetos multiplayer reais com backend separado em Node.js.
+
+Construído especificamente para o desenvolvimento de jogos multiplayer com foco em dispositivos móveis, permitindo testes multiplayer locais completos diretamente no Android usando o Termux, sem a necessidade de configurar um servidor em um computador.
 
 ## Features
 
