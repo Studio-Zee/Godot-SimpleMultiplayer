@@ -38,7 +38,7 @@ SimpleMultiplayer3D is a lightweight Godot plugin for real-time 3D multiplayer o
 
 This plugin is designed to work with a separate Node.js server repository that contains the full step-by-step guide for installing, configuring, and running the backend.
 
-Server repository: [Open the server repository](https://github.com/your-organization/your-server-repository)
+Server repository: [Open the server repository](https://github.com/Studio-Zee/Godot-SimpleMultiplayerServer)
 
 Use that repository when you need:
 
@@ -243,7 +243,7 @@ Para o primeiro teste, o fluxo recomendado é rodar o servidor Node.js localment
 
 Este plugin foi desenvolvido para funcionar com um repositório separado do servidor Node.js, onde está o passo a passo completo de instalação, configuração e execução do backend.
 
-Repositório do servidor: [Abrir o repositório do servidor](https://github.com/your-organization/your-server-repository)
+Repositório do servidor: [Abrir o repositório do servidor](https://github.com/Studio-Zee/Godot-SimpleMultiplayerServer)
 
 Use esse repositório quando precisar de:
 
