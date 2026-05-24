@@ -1,3 +1,15 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+*.translation
+
+# Arquivos de Exportação (Para não subir seus testes de Android/PC)
+*.apk
+*.aab
+*.exe
+*.pck
+*.zip
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db

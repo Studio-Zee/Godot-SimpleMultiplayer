@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cfvjsmsde8fcb"]
+
+[ext_resource type="Script" uid="uid://b87tvggbfsn3y" path="res://exemplo/scripts/mundo_teste/mundo_teste.gd" id="1_jayxq"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_mrorq"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_mrorq"]
+data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[node name="MundoTeste" type="Node3D" unique_id=690818936]
+script = ExtResource("1_jayxq")
+
+[node name="chao" type="MeshInstance3D" parent="." unique_id=1269820979]
+transform = Transform3D(30, 0, 0, 0, 1, 0, 0, 0, 30, 0, 0, 0)
+mesh = SubResource("BoxMesh_mrorq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="chao" unique_id=1922009550]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="chao/StaticBody3D" unique_id=521811853]
+shape = SubResource("ConcavePolygonShape3D_mrorq")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=355601909]
+transform = Transform3D(1, 0, 0, 0, 0.012566074, 0.9999211, 0, -0.9999211, 0.012566074, 0, 20.50027, 0)
+
+[node name="PlayerContainer" type="Node" parent="." unique_id=1512013923]
