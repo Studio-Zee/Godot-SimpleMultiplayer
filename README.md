@@ -259,7 +259,7 @@ node server.js
 ### Descobrir o IP local da rede Wi-Fi
 
 ```bash
-ip addr show wlan0
+ifconfig
 ```
 
 Use o endereço IP fornecido pela sua rede Wi-Fi, e não `localhost`, ao conectar a partir de outro dispositivo.
