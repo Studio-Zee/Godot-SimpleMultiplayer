@@ -48,7 +48,7 @@ For the first test, the recommended flow is to run the Node.js server locally, o
 
 This plugin was developed to work with a separate repository from the Node.js server, where you can find the complete step-by-step instructions for installing, configuring, and running the backend.
 
-Server repository: [Open server repository](https://github.com/your-organization/your-server-repository)
+Server repository: [Open server repository](https://github.com/Studio-Zee/Godot-SimpleMultiplayerServer)
 
 Use this repository when you need:
 
