@@ -14,7 +14,7 @@ extends Node3D
 var camera_player : Camera3D
 var transform_original_camera : Transform3D
 
-const DEFAULT_SERVER_URL = "ws://localhost:9090"
+const DEFAULT_SERVER_URL = "ws://192.168.3.103"
 
 func _ready():
 	terminal_ui.hide()
