@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://qc0ghf6yds1f" path="res://exemplo/scripts/lobby/lobby.gd" id="2_a1lms"]
 [ext_resource type="PackedScene" uid="uid://dmfwskkhffag0" path="res://exemplo/cenas/monitor.tscn" id="3_kj0ed"]
 [ext_resource type="PackedScene" uid="uid://by5og5nqib44m" path="res://exemplo/player/player_local.tscn" id="5_qp1wg"]
-[ext_resource type="Script" uid="uid://dr4sinp1hxjhe" path="res://exemplo/scripts/tela/tela_touch.gd" id="5_sw6cc"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_2se70"]
 data = PackedVector3Array(-1, 1.64, 1, -1, 1.64, -1, -1, 2, -1, -1, 1.64, 1, -1, 2, -1, -1, 2, 1, -1, 0.0984, 1, -1, 1.64, -1, -1, 1.64, 1, -1, 0.0984, 1, -1, 0.0984, -1, -1, 1.64, -1, 0.7321, 1.64, -1, 1, 1.64, -1, 1, 2, -1, 0.7321, 1.64, -1, 1, 2, -1, 0.7321, 2, -1, 0.7321, 0.0984, -1, 1, 1.64, -1, 0.7321, 1.64, -1, 0.7321, 0.0984, -1, 1, 0.0984, -1, 1, 1.64, -1, -0.7321, 0.0984, -1, 0.7321, 0.0984, -1, 0.7321, 1.64, -1, -0.7321, 1.64, -1, 0.7321, 1.64, -1, 0.7321, 2, -1, -0.7321, 0.0984, -1, 0.7321, 1.64, -1, -0.7321, 1.64, -1, -1, 0.0984, -1, -0.7321, 0.0984, -1, -0.7321, 1.64, -1, -0.7321, 1.64, -1, 0.7321, 2, -1, -0.7321, 2, -1, -1, 0.0984, -1, -0.7321, 1.64, -1, -1, 1.64, -1, -1, 1.64, -1, -0.7321, 1.64, -1, -0.7321, 2, -1, -1, 1.64, -1, -0.7321, 2, -1, -1, 2, -1, 1, 1.64, -1, 1, 1.64, 1, 1, 2, 1, 1, 1.64, -1, 1, 2, 1, 1, 2, -1, 1, 0.0984, -1, 1, 1.64, 1, 1, 1.64, -1, 1, 0.0984, -1, 1, 0.0984, 1, 1, 1.64, 1, -0.7321, 1.64, 1, -1, 1.64, 1, -1, 2, 1, -0.7321, 1.64, 1, -1, 2, 1, -0.7321, 2, 1, -0.7321, 0.0984, 1, -1, 1.64, 1, -0.7321, 1.64, 1, -0.7321, 0.0984, 1, -1, 0.0984, 1, -1, 1.64, 1, 0.7321, 1.64, 1, -0.7321, 1.64, 1, -0.7321, 2, 1, 0.7321, 1.64, 1, -0.7321, 2, 1, 0.7321, 2, 1, 1, 1.64, 1, 0.7321, 1.64, 1, 0.7321, 2, 1, 1, 1.64, 1, 0.7321, 2, 1, 1, 2, 1, 1, 0.0984, 1, 0.7321, 1.64, 1, 1, 1.64, 1, 1, 0.0984, 1, 0.7321, 0.0984, 1, 0.7321, 1.64, 1, -0.7321, 2, -1, -0.7321, 2, 1, -1, 2, 1, -0.7321, 2, -1, -1, 2, 1, -1, 2, -1, -0.38059998, 2, -0.8504, -0.7321, 2, 1, -0.7321, 2, -1, -0.38059998, 2, -0.8504, -0.38059998, 2, 0.8504, -0.7321, 2, 1, 0.38059998, 2, -0.8504, -0.38059998, 2, -0.8504, -0.7321, 2, -1, 0.38059998, 2, -0.8504, -0.7321, 2, -1, 0.7321, 2, -1, 0.38059998, 2, 0.8504, 0.38059998, 2, -0.8504, 0.7321, 2, -1, -0.38059998, 2, 0.8504, 0.7321, 2, 1, -0.7321, 2, 1, -0.38059998, 2, 0.8504, 0.38059998, 2, 0.8504, 0.7321, 2, 1, 0.38059998, 2, 0.8504, 0.7321, 2, -1, 0.7321, 2, 1, 1, 2, -1, 0.7321, 2, 1, 0.7321, 2, -1, 1, 2, -1, 1, 2, 1, 0.7321, 2, 1, 0.38059998, 2, -0.8504, 0.38059998, 2, 0.8504, 0.38059998, 2.1996, 0.8504, 0.38059998, 2, -0.8504, 0.38059998, 2.1996, 0.8504, 0.38059998, 2.1996, -0.8504, -0.7321, 0.0984, 1, -0.7321, 1.64, 1, -0.7321, 1.64, 2.1715999, -0.7321, 0.0984, 1, -0.7321, 1.64, 2.1715999, -0.7321, 0.0984, 2.1715999, 0.7321, 0.0984, 2.1715999, -0.7321, 0.0984, 2.1715999, -0.7321, 1.64, 2.1715999, 0.7321, 0.0984, 2.1715999, -0.7321, 1.64, 2.1715999, 0.7321, 1.64, 2.1715999, -0.7321, 1.64, 1, 0.7321, 1.64, 1, 0.7321, 1.64, 2.1715999, -0.7321, 1.64, 1, 0.7321, 1.64, 2.1715999, -0.7321, 1.64, 2.1715999, 0.7321, 1.64, 1, 0.7321, 0.0984, 1, 0.7321, 0.0984, 2.1715999, 0.7321, 1.64, 1, 0.7321, 0.0984, 2.1715999, 0.7321, 1.64, 2.1715999, -0.38059998, 2, -0.8504, 0.38059998, 2, -0.8504, 0.38059998, 2.1996, -0.8504, -0.38059998, 2, -0.8504, 0.38059998, 2.1996, -0.8504, -0.38059998, 2.1996, -0.8504, -0.38059998, 2, 0.8504, -0.38059998, 2, -0.8504, -0.38059998, 2.1996, -0.8504, -0.38059998, 2, 0.8504, -0.38059998, 2.1996, -0.8504, -0.38059998, 2.1996, 0.8504, 0.38059998, 2, 0.8504, -0.38059998, 2, 0.8504, -0.38059998, 2.1996, 0.8504, 0.38059998, 2, 0.8504, -0.38059998, 2.1996, 0.8504, 0.38059998, 2.1996, 0.8504)
@@ -17,28 +16,11 @@ backface_collision = true
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_6okrd"]
 data = PackedVector3Array(-1, 0, 1.5540999, 1, 0, -1.5540999, 1, 0, 1.5540999, -1, 0, 1.5540999, -1, 0, -1.5540999, 1, 0, -1.5540999)
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_ltsnn"]
-viewport_path = NodePath("TelaViewport")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8svgb"]
-resource_local_to_scene = true
-shading_mode = 0
-albedo_texture = SubResource("ViewportTexture_ltsnn")
-uv1_scale = Vector3(1, -1, 1)
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_a1lms"]
 size = Vector3(18.864685, 1, 10.490356)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kj0ed"]
 size = Vector3(28.52008, 25.00293, 38.249695)
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a1lms"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_lxmr4"]
-font_size = 38
-shadow_size = 4
-shadow_color = Color(0, 0, 0, 1)
-shadow_offset = Vector2(0, 4)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kj0ed"]
 albedo_color = Color(0, 0, 0, 1)
@@ -51,6 +33,14 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_sw6cc"]
 size = Vector3(1.5801353, 1.0440068, 0.022583008)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a1lms"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_lxmr4"]
+font_size = 38
+shadow_size = 4
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(0, 4)
 
 [node name="Lobby" unique_id=300800232 instance=ExtResource("1_lxmr4")]
 script = ExtResource("2_a1lms")
@@ -74,13 +64,9 @@ shape = SubResource("ConcavePolygonShape3D_6okrd")
 transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0, 0.42236632, -5.417623)
 
 [node name="ibm_3178_2" parent="monitor/Sketchfab_model/Root/ibm_3178" parent_id_path=PackedInt32Array(464827340, 501755569) index="2" unique_id=1704766133]
-surface_material_override/0 = SubResource("StandardMaterial3D_8svgb")
+surface_material_override/0 = null
 
-[node name="StaticBody3D" parent="monitor/Sketchfab_model/Root/ibm_3178/ibm_3178_2" index="0" unique_id=1263702576 node_paths=PackedStringArray("viewport")]
-script = ExtResource("5_sw6cc")
-viewport = NodePath("../../../../../TelaViewport")
-
-[node name="CollisionShape3D" parent="monitor/Sketchfab_model/Root/ibm_3178/ibm_3178_2/StaticBody3D" index="0" unique_id=453435384]
+[node name="CollisionShape3D" parent="monitor/Sketchfab_model/Root/ibm_3178/ibm_3178_2/StaticBody3D" parent_id_path=PackedInt32Array(464827340, 1263702576) index="0" unique_id=453435384]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07797293, -4.8409576, 14.942253)
 shape = SubResource("BoxShape3D_a1lms")
 disabled = true
@@ -91,15 +77,30 @@ disabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5516052, 12.001465, 2.416565)
 shape = SubResource("BoxShape3D_kj0ed")
 
-[node name="PosicaoTela" type="Marker3D" parent="monitor" index="2" unique_id=1865441224]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.3876915, 16.604416)
+[node name="mesa" type="MeshInstance3D" parent="." index="2" unique_id=1849365575]
+transform = Transform3D(1, 0, 0, 0, 0.43550137, 0, 0, 0, 1, 0, 0.20466846, -5.6063485)
+mesh = SubResource("BoxMesh_a1lms")
 
-[node name="TelaViewport" type="SubViewport" parent="monitor" index="3" unique_id=1687371655]
-size = Vector2i(640, 480)
+[node name="StaticBody3D" type="StaticBody3D" parent="mesa" index="0" unique_id=1010244649]
 
-[node name="TerminalUI" type="CanvasLayer" parent="monitor/TelaViewport" index="0" unique_id=866368315]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="mesa/StaticBody3D" index="0" unique_id=2012685722]
+shape = SubResource("ConcavePolygonShape3D_kj0ed")
 
-[node name="Control" type="Control" parent="monitor/TelaViewport/TerminalUI" index="0" unique_id=1636065839]
+[node name="TelaTouch" type="StaticBody3D" parent="." index="3" unique_id=68504637]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0569731, 0.9423289, -5.101904)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TelaTouch" index="0" unique_id=604752470]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, -8.7447464e-05, 0.04181415, -0.11127615)
+shape = SubResource("BoxShape3D_sw6cc")
+
+[node name="Player3D" parent="." index="4" unique_id=1826431025 instance=ExtResource("5_qp1wg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3049514, 0)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="5" unique_id=1233533384]
+
+[node name="TerminalUI" type="CanvasLayer" parent="CanvasLayer" index="0" unique_id=866368315]
+
+[node name="Control" type="Control" parent="CanvasLayer/TerminalUI" index="0" unique_id=1636065839]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -108,7 +109,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="Panel" type="Panel" parent="monitor/TelaViewport/TerminalUI/Control" index="0" unique_id=313135713]
+[node name="Panel" type="Panel" parent="CanvasLayer/TerminalUI/Control" index="0" unique_id=313135713]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -124,7 +125,7 @@ grow_vertical = 2
 mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_a1lms")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="monitor/TelaViewport/TerminalUI/Control/Panel" index="0" unique_id=206983978]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/TerminalUI/Control/Panel" index="0" unique_id=206983978]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -139,56 +140,35 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="Label" type="Label" parent="monitor/TelaViewport/TerminalUI/Control/Panel/VBoxContainer" index="0" unique_id=1607855648]
+[node name="Label" type="Label" parent="CanvasLayer/TerminalUI/Control/Panel/VBoxContainer" index="0" unique_id=1607855648]
 layout_mode = 2
 text = "Terminal de Conexão"
 label_settings = SubResource("LabelSettings_lxmr4")
 
-[node name="LineEdit" type="LineEdit" parent="monitor/TelaViewport/TerminalUI/Control/Panel/VBoxContainer" index="1" unique_id=5910075]
+[node name="LineEdit" type="LineEdit" parent="CanvasLayer/TerminalUI/Control/Panel/VBoxContainer" index="1" unique_id=5910075]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 
-[node name="criar" type="Button" parent="monitor/TelaViewport/TerminalUI/Control/Panel/VBoxContainer" index="2" unique_id=353850382]
+[node name="criar" type="Button" parent="CanvasLayer/TerminalUI/Control/Panel/VBoxContainer" index="2" unique_id=353850382]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Criar Sala"
 
-[node name="entrar" type="Button" parent="monitor/TelaViewport/TerminalUI/Control/Panel/VBoxContainer" index="3" unique_id=1965884783]
+[node name="entrar" type="Button" parent="CanvasLayer/TerminalUI/Control/Panel/VBoxContainer" index="3" unique_id=1965884783]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Entrar"
 
-[node name="sair" type="Button" parent="monitor/TelaViewport/TerminalUI/Control/Panel/VBoxContainer" index="4" unique_id=1504230825]
+[node name="sair" type="Button" parent="CanvasLayer/TerminalUI/Control/Panel/VBoxContainer" index="4" unique_id=1504230825]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Sair"
 
-[node name="mesa" type="MeshInstance3D" parent="." index="2" unique_id=1849365575]
-transform = Transform3D(1, 0, 0, 0, 0.43550137, 0, 0, 0, 1, 0, 0.20466846, -5.6063485)
-mesh = SubResource("BoxMesh_a1lms")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="mesa" index="0" unique_id=1010244649]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="mesa/StaticBody3D" index="0" unique_id=2012685722]
-shape = SubResource("ConcavePolygonShape3D_kj0ed")
-
-[node name="TelaTouch" type="StaticBody3D" parent="." index="3" unique_id=68504637 node_paths=PackedStringArray("viewport")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0569731, 0.9423289, -5.101904)
-script = ExtResource("5_sw6cc")
-viewport = NodePath("../monitor/TelaViewport")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="TelaTouch" index="0" unique_id=604752470]
-transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, -8.7447464e-05, 0.04181415, -0.11127615)
-shape = SubResource("BoxShape3D_sw6cc")
-
-[node name="Player3D" parent="." index="4" unique_id=1826431025 instance=ExtResource("5_qp1wg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3049514, 0)
-
 [connection signal="body_entered" from="monitor/ZonaTerminal" to="." method="_on_zona_terminal_body_entered"]
 [connection signal="body_exited" from="monitor/ZonaTerminal" to="." method="_on_zona_terminal_body_exited"]
-[connection signal="pressed" from="monitor/TelaViewport/TerminalUI/Control/Panel/VBoxContainer/criar" to="." method="_on_criar_pressed"]
-[connection signal="pressed" from="monitor/TelaViewport/TerminalUI/Control/Panel/VBoxContainer/entrar" to="." method="_on_entrar_pressed"]
-[connection signal="pressed" from="monitor/TelaViewport/TerminalUI/Control/Panel/VBoxContainer/sair" to="." method="_on_sair_pressed"]
 [connection signal="input_event" from="TelaTouch" to="TelaTouch" method="_on_input_event"]
+[connection signal="pressed" from="CanvasLayer/TerminalUI/Control/Panel/VBoxContainer/criar" to="." method="_on_criar_pressed"]
+[connection signal="pressed" from="CanvasLayer/TerminalUI/Control/Panel/VBoxContainer/entrar" to="." method="_on_entrar_pressed"]
+[connection signal="pressed" from="CanvasLayer/TerminalUI/Control/Panel/VBoxContainer/sair" to="." method="_on_sair_pressed"]
 
 [editable path="monitor"]
