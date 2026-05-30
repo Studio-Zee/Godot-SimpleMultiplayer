@@ -41,40 +41,40 @@ script = ExtResource("2_i348s")
 
 [node name="CentroDaSala" type="Node3D" parent="." index="0" unique_id=560015147]
 
-[node name="Sketchfab_model" parent="." index="1" unique_id=622493822]
+[node name="Sketchfab_model" parent="." index="1" unique_id=1918888498]
 transform = Transform3D(1, 0, 0, 0, 2.220446e-16, 1, 0, -1, 2.220446e-16, -11.652655, 0, 0)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_040/Plane_040_Material_023_0" parent_id_path=PackedInt32Array(588220168) index="0" unique_id=243038868]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_040/Plane_040_Material_023_0" parent_id_path=PackedInt32Array(2138599138) index="0" unique_id=243038868]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_040/Plane_040_Material_023_0/StaticBody3D" index="0" unique_id=887162734]
 shape = SubResource("ConcavePolygonShape3D_3at8u")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_041/Plane_041_Material_004_0" parent_id_path=PackedInt32Array(1038911528) index="0" unique_id=1167105383]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_041/Plane_041_Material_004_0" parent_id_path=PackedInt32Array(1257147777) index="0" unique_id=1167105383]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_041/Plane_041_Material_004_0/StaticBody3D" index="0" unique_id=731822911]
 shape = SubResource("ConcavePolygonShape3D_6fsyx")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_042/Plane_042_Material_0" parent_id_path=PackedInt32Array(220216623) index="0" unique_id=31246136]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_042/Plane_042_Material_0" parent_id_path=PackedInt32Array(2001597018) index="0" unique_id=31246136]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_042/Plane_042_Material_0/StaticBody3D" index="0" unique_id=372237099]
 shape = SubResource("ConcavePolygonShape3D_i348s")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_043/Plane_043_Material_005_0" parent_id_path=PackedInt32Array(1989527835) index="0" unique_id=2032648203]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_043/Plane_043_Material_005_0" parent_id_path=PackedInt32Array(1632705307) index="0" unique_id=2032648203]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_043/Plane_043_Material_005_0/StaticBody3D" index="0" unique_id=514752151]
 shape = SubResource("ConcavePolygonShape3D_fkeds")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_057/Plane_057_Material_0" parent_id_path=PackedInt32Array(1026760700) index="0" unique_id=1331079246]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_057/Plane_057_Material_0" parent_id_path=PackedInt32Array(296740964) index="0" unique_id=1331079246]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_057/Plane_057_Material_0/StaticBody3D" index="0" unique_id=2119799272]
 shape = SubResource("ConcavePolygonShape3D_52mpc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_058/Plane_058_Material_0" parent_id_path=PackedInt32Array(573417320) index="0" unique_id=130981843]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_058/Plane_058_Material_0" parent_id_path=PackedInt32Array(1239540727) index="0" unique_id=130981843]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_058/Plane_058_Material_0/StaticBody3D" index="0" unique_id=1164065340]
 shape = SubResource("ConcavePolygonShape3D_4ouk6")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_059/Plane_059_Material_0" parent_id_path=PackedInt32Array(1600768612) index="0" unique_id=784397804]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_059/Plane_059_Material_0" parent_id_path=PackedInt32Array(1025169136) index="0" unique_id=784397804]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/60218395bad04ab2b54b73c63a924108_fbx/RootNode/Plane_059/Plane_059_Material_0/StaticBody3D" index="0" unique_id=1964226494]
 shape = SubResource("ConcavePolygonShape3D_hw00b")
@@ -85,7 +85,7 @@ shape = SubResource("ConcavePolygonShape3D_hw00b")
 offset_right = 336.0
 offset_bottom = 63.0
 theme_override_font_sizes/font_size = 38
-text = "NICIAR PARTIDA"
+text = "INICIAR PARTIDA"
 
 [node name="LabelContador" type="Label" parent="CanvasLayer" index="1" unique_id=750445353]
 offset_top = 134.0
