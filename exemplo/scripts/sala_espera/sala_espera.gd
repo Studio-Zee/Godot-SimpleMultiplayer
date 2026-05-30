@@ -59,4 +59,4 @@ func _on_btn_iniciar_pressed():
 # [EN] Switches from the waiting scene to the main arena when the server releases the match
 func _ir_para_arena():
 	print("Partida iniciada! Carregando a Arena...")
-	get_tree().change_scene_to_file("res://cenas/mundo_teste.tscn")
+	get_tree().change_scene_to_file("res://exemplo/cenas/mundo_teste.tscn")
