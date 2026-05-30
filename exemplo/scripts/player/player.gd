@@ -33,22 +33,27 @@ func _ready():
 # [PT-BR] Trata entrada do usuário para liberar o mouse e rotacionar corpo/câmera em modo capturado
 # [EN] Handles user input to release the mouse and rotate body/camera while captured
 func _input(event):
-	# Se a interface do terminal estiver aberta, não gira a câmera!
-	# (Você pode adaptar essa checagem dependendo de como fez no seu código)
+	# [PT-BR] Se a interface do terminal estiver aberta, não gira a câmera!
+	# [EN] If the terminal UI is open, do not rotate the camera!
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
 		return
 
-	# Aqui está o segredo: Aceita MOUSE ou TOQUE (Arrastar)
+	# [PT-BR] Aceita MOUSE ou TOQUE (Arrastar)
+	# [EN] Accepts MOUSE or TOUCH (Drag)
 	if event is InputEventMouseMotion or event is InputEventScreenDrag:
-		
-		# Gira o corpo do Player para os lados (Esquerda/Direita)
+		# [PT-BR] Gira o corpo do Player para os lados (Esquerda/Direita)
+		# [EN] Rotate the Player body left/right
 		rotate_y(-event.relative.x * sensibilidade)
 		
-		# Gira a Câmera para cima/baixo
-		var camera = $Camera3D # Troque pelo caminho correto da sua câmera
+		# [PT-BR] Gira a Câmera para cima/baixo
+		# [EN] Rotate the Camera up/down
+		# [PT-BR] Troque pelo caminho correto da sua câmera
+		# [EN] Replace with the correct path to your camera
+		var camera = $Camera3D
 		camera.rotate_x(-event.relative.y * sensibilidade)
 		
-		# Trava a câmera para o personagem não dar cambalhota (olhar muito pra trás)
+		# [PT-BR] Trava a câmera para o personagem não dar cambalhota (olhar muito pra trás)
+		# [EN] Clamp the camera so the character can't flip over (look too far back)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-70), deg_to_rad(70))
 
 # [PT-BR] Atualiza gravidade, salto, deslocamento e replica o estado local para o servidor
