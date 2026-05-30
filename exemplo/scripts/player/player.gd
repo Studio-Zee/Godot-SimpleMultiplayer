@@ -32,28 +32,28 @@ func _ready():
 
 # [PT-BR] Trata entrada do usuário para liberar o mouse e rotacionar corpo/câmera em modo capturado
 # [EN] Handles user input to release the mouse and rotate body/camera while captured
-func _input(event):
-	# [PT-BR] Se a interface do terminal estiver aberta, não gira a câmera!
-	# [EN] If the terminal UI is open, do not rotate the camera!
+# Troque _input para _unhandled_input
+func _unhandled_input(event):
+	# [PT-BR] O botão ESC / sair do modo capturado continua aqui
+	# [EN] The ESC button / exit from captured mode is handled here
+	if event.is_action_pressed("ui_cancel"):
+		if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		else:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
+	# [PT-BR] Se a interface estiver aberta (mouse visível), não gira
+	# [EN] If the interface is open (mouse visible), do not rotate
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
 		return
 
-	# [PT-BR] Aceita MOUSE ou TOQUE (Arrastar)
-	# [EN] Accepts MOUSE or TOUCH (Drag)
+	# [PT-BR] A rotação só acontece quando o arraste não está sobre o joystick
+	# [EN] Rotation only happens when the drag is not over the joystick
 	if event is InputEventMouseMotion or event is InputEventScreenDrag:
-		# [PT-BR] Gira o corpo do Player para os lados (Esquerda/Direita)
-		# [EN] Rotate the Player body left/right
 		rotate_y(-event.relative.x * sensibilidade)
 		
-		# [PT-BR] Gira a Câmera para cima/baixo
-		# [EN] Rotate the Camera up/down
-		# [PT-BR] Troque pelo caminho correto da sua câmera
-		# [EN] Replace with the correct path to your camera
 		var camera = $Camera3D
 		camera.rotate_x(-event.relative.y * sensibilidade)
-		
-		# [PT-BR] Trava a câmera para o personagem não dar cambalhota (olhar muito pra trás)
-		# [EN] Clamp the camera so the character can't flip over (look too far back)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-70), deg_to_rad(70))
 
 # [PT-BR] Atualiza gravidade, salto, deslocamento e replica o estado local para o servidor
