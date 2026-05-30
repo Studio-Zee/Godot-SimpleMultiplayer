@@ -55,17 +55,17 @@ size = Vector3(1.5801353, 1.0440068, 0.022583008)
 [node name="Lobby" unique_id=300800232 instance=ExtResource("1_lxmr4")]
 script = ExtResource("2_a1lms")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_0/Object_4" parent_id_path=PackedInt32Array(1013487074) index="0" unique_id=22785968]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_0/Object_4" parent_id_path=PackedInt32Array(1350307007) index="0" unique_id=22785968]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_0/Object_4/StaticBody3D" index="0" unique_id=1856187226]
 shape = SubResource("ConcavePolygonShape3D_2se70")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_0/Object_5" parent_id_path=PackedInt32Array(1741322108) index="0" unique_id=2124755350]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_0/Object_5" parent_id_path=PackedInt32Array(264903886) index="0" unique_id=2124755350]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Cube_0/Object_5/StaticBody3D" index="0" unique_id=2120471709]
 shape = SubResource("ConcavePolygonShape3D_cp6lq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_1/Object_7" parent_id_path=PackedInt32Array(1101491400) index="0" unique_id=1273510955]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_1/Object_7" parent_id_path=PackedInt32Array(2053206527) index="0" unique_id=1273510955]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_1/Object_7/StaticBody3D" index="0" unique_id=1834912141]
 shape = SubResource("ConcavePolygonShape3D_6okrd")
@@ -73,7 +73,7 @@ shape = SubResource("ConcavePolygonShape3D_6okrd")
 [node name="monitor" parent="." index="1" unique_id=464827340 instance=ExtResource("3_kj0ed")]
 transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0, 0.42236632, -5.417623)
 
-[node name="ibm_3178_2" parent="monitor/Sketchfab_model/Root/ibm_3178" parent_id_path=PackedInt32Array(464827340, 1714359484) index="2" unique_id=1125909974]
+[node name="ibm_3178_2" parent="monitor/Sketchfab_model/Root/ibm_3178" parent_id_path=PackedInt32Array(464827340, 501755569) index="2" unique_id=1704766133]
 surface_material_override/0 = SubResource("StandardMaterial3D_8svgb")
 
 [node name="StaticBody3D" parent="monitor/Sketchfab_model/Root/ibm_3178/ibm_3178_2" index="0" unique_id=1263702576 node_paths=PackedStringArray("viewport")]

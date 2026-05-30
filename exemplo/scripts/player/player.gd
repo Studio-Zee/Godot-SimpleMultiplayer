@@ -20,6 +20,8 @@ const MOUSE_SENSITIVITY = 0.003
 # [EN] Shortcut to the WebSocketClient autoload, used to send movement state
 var ws_client = null
 
+@export var sensibilidade: float = 0.005
+
 # [PT-BR] Captura o mouse e localiza o cliente WebSocket assim que o jogador entra na cena
 # [EN] Captures the mouse and locates the WebSocket client as soon as the player enters the scene
 func _ready():
@@ -31,14 +33,23 @@ func _ready():
 # [PT-BR] Trata entrada do usuário para liberar o mouse e rotacionar corpo/câmera em modo capturado
 # [EN] Handles user input to release the mouse and rotate body/camera while captured
 func _input(event):
-	if event.is_action_pressed("ui_cancel"):
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	# Se a interface do terminal estiver aberta, não gira a câmera!
+	# (Você pode adaptar essa checagem dependendo de como fez no seu código)
+	if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
+		return
+
+	# Aqui está o segredo: Aceita MOUSE ou TOQUE (Arrastar)
+	if event is InputEventMouseMotion or event is InputEventScreenDrag:
 		
-	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-		if event is InputEventMouseMotion:
-			rotate_y(-event.relative.x * MOUSE_SENSITIVITY)
-			camera.rotate_x(-event.relative.y * MOUSE_SENSITIVITY)
-			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-80), deg_to_rad(80))
+		# Gira o corpo do Player para os lados (Esquerda/Direita)
+		rotate_y(-event.relative.x * sensibilidade)
+		
+		# Gira a Câmera para cima/baixo
+		var camera = $Camera3D # Troque pelo caminho correto da sua câmera
+		camera.rotate_x(-event.relative.y * sensibilidade)
+		
+		# Trava a câmera para o personagem não dar cambalhota (olhar muito pra trás)
+		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-70), deg_to_rad(70))
 
 # [PT-BR] Atualiza gravidade, salto, deslocamento e replica o estado local para o servidor
 # [EN] Updates gravity, jump, movement, and replicates the local state to the server

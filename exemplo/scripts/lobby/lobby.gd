@@ -135,7 +135,7 @@ func _on_connection_failed() -> void:
 # [PT-BR] Troca a cena para a sala de espera após a criação da sala ser confirmada
 # [EN] Changes the scene to the waiting room after room creation is confirmed
 func _on_room_created(data: Dictionary):
-	get_tree().change_scene_to_file("res://cenas/sala_espera.tscn")
+	get_tree().change_scene_to_file("res://exemplo/cenas/sala_espera.tscn")
 
 # [PT-BR] Troca a cena para a sala de espera após o cliente entrar em uma sala existente
 # [EN] Changes the scene to the waiting room after the client joins an existing room
